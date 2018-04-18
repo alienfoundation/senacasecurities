@@ -22,20 +22,14 @@
 
        <div class="header container-fluid">
            <div class="header-top row">
-               <div class="col-sm-3 info-container">
-                    <div class="header-info">
-                            <p class="header-text"><i class="fas fa-map-marker-alt header-icon"></i> 194, Opposite J&K Society, Gurugram</p>
-                      </div>
-                      <div class="header-info">
-                            <p class="header-text"><i class="far fa-envelope header-icon"></i> info@senacasecurities.com</p>
-                      </div>
-                      <div class="header-info">
-                            <p class="header-text"><i class="fas fa-phone header-icon"></i> +91 83830 33060</p>
-                      </div>
-               </div>
-               <div class="col-sm-6">
+               <div class="col-sm-3">
                     <div class="logo-container">
                         <img src="images/Logo1.png">
+                    </div>
+               </div>
+               <div class="col-sm-6">
+                    <div class="logo-container-2">
+                        <img src="images/Logo2.png">
                     </div>
                </div>
                <div class="col-sm-3 social-link-wrapper">
@@ -67,6 +61,41 @@
             </div>
         </div>
 
+        <div class="company container-fluid">
+            <div class="row company-shadow">
+
+                <div class="top-bar"></div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <div class="company-text">
+                    <h3 class="company-heading">Our Company</h3>
+                    <p class="company-breif">What began as a team of just two employees in a rented office in 2018, is today, a leading manpower security corporation in India.
+<br><br>
+                            Furthermore, the SCS Group has been recognized not only as India’s second largest security services provider, but also as the joint largest security services provider in Haryana.
+                            <br><br>
+                            With an unremitting spirit of innovation and a dynamic and multifaceted portfolio of services that offers people enduring value, the Group has expanded its footprint not just across 29 Indian states including the remotest corners, but also across a widespread network in Haryana.</p>
+                        </div>
+                        </div>
+                <div class="col-sm-5">
+                    <div class="company-text row">
+                            <h3 class="company-heading">What We Do</h3>
+                        <div class="col-sm-1">
+                            <button onclick="changeWwdFunc(-1)" class="btn1"><i class="fas fa-arrow-left"></i></button>
+                        </div>
+                        <div class="col-sm-10">
+                                <div class="left-right-swipe">
+                                    <h3 id="wwd-head">Infrastructure</h3>
+                                    <p id="wwd-data">The SCS Group offers extensive support to major corporations that require security solutions to minimize and eliminate threats to their physical infrastructure as well as protecting human resources and the general public. The services offered range from constant monitoring and controlled video surveillance to strengthen the safety and security of employees and their own customers. The Group’s services are an asset to the power, telecom, transportation, real estates, educational institutions and healthcare establishments.</p>
+                                </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <button onclick="changeWwdFunc(1)" class="btn2"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
 
 
                   <div class="services container-fluid">
@@ -125,6 +154,47 @@
                                 </div>
                             </div>
                     </div>
+                  </div>
+
+                  <div class="gallery">
+                    <h2 class="gallery-heading">Gallery</h2>
+                    <div class="gallery-card-container">
+                        <div class="gallery-card">
+                            <div class="img-container g1"></div>
+                        </div>
+                        <div class="gallery-card">
+                                <div class="img-container g2"></div>
+                            </div>
+                            <div class="gallery-card">
+                                    <div class="img-container g3"></div>
+                                </div>
+                            <div class="gallery-card">
+                                    <div class="img-container g4"></div>
+                                </div>
+                    </div>
+                  </div>
+
+                  <div class="grow">
+                      <div class="row">
+                          <div class="col-sm-2"></div>
+                          <div class="col-sm-4">
+                              <div class="grow-w-u">
+                                <a href="#">
+                                    <span>Careers</span>
+                                    <h3>Grow With Us</h3>
+                                </a>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                                <div class="reach-w-u">
+                                    <a href="#"> 
+                                        <span>Contact Us</span>
+                                        <h3>Reach Out With Us</h3>
+                                    </a>
+                                </div>
+                          </div>
+                          <div class="col-sm-2"></div>
+                      </div>
                   </div>
 
                   <footer class="container-fluid">
@@ -196,6 +266,32 @@
                             sti = 0;
                         }
                     }, 7000);
+
+                    wwdheadarray = ["Infrastructure", "Industry", "Corporate &amp; Consumers"];
+                    wwddataarray = [
+                        "The SCS Group offers extensive support to major corporations that require security solutions to minimize and eliminate threats to their physical infrastructure as well as protecting human resources and the general public. The services offered range from constant monitoring and controlled video surveillance to strengthen the safety and security of employees and their own customers. The Group’s services are an asset to the power, telecom, transportation, real estates, educational institutions and healthcare establishments.",
+                        "A nation’s progress lies in the smooth &amp; efficient operations and security of enterprises like steel &amp; heavy industries, food &amp; beverages, automobiles, construction, engineering, chemical and industrial gases, paper and cement. For such industries, the SCS Group works tirelessly across tough geographical terrains, hostile and political environment, ensuring that the security and efficiency of operations and business processes are never compromised.",
+                        "Besides security conscious individuals and home owners, sectors like banking, media, information technology, insurance, major sporting events, heritage monuments and hospitality have an ever increasing need for technology enabled security services, emergency response solutions, crowd management and facility management. We provide comprehensive range of services for these sectors."
+                    ]
+
+                    wwdhead = document.getElementById("wwd-head");
+                    wwddata = document.getElementById("wwd-data");
+                    wwdi = 0;
+                    function changeWwdFunc(x) {
+                        if(x==1) {
+                            wwdi++;
+                            if(wwdi==wwdheadarray.length) {
+                                wwdi = 0;
+                            }
+                        } else {
+                            wwdi--;
+                            if(wwdi==-1) {
+                                wwdi = wwdheadarray.length-1;
+                            }
+                        }
+                        wwdhead.innerHTML = wwdheadarray[wwdi];
+                        wwddata.innerHTML = wwddataarray[wwdi];
+                    }
                   
                   </script>
 
