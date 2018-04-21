@@ -631,5 +631,10 @@ footer .footer-icon {
     .grow a:hover span.reach-us-span {
         top: 34px;
     }
+}
 
+@media (max-width: 530px) {
+    .dropdown-menu {
+        left: -105%;
+    }
 }
