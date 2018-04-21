@@ -152,7 +152,8 @@ body * {
 
 .header .logo-container-2 {
     text-align: left;
-    margin-left: -6%;
+    margin-left: 45px;
+    margin-top: 20px;
 }
 
 .slider-wrapper {
