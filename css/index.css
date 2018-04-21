@@ -634,7 +634,7 @@ footer .footer-icon {
 }
 
 @media (max-width: 530px) {
-    .dropdown-menu {
+    .dropdown-menu.menu2 {
         left: -105%;
     }
 }
