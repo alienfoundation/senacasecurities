@@ -584,6 +584,10 @@ footer .footer-icon {
         display: none;
     }
 
+    .gallery {
+        padding: 30px 20px 20px;
+    }
+
     .gallery .gallery-card {
         width: 250px;
     }
