@@ -114,20 +114,40 @@ body * {
     display: inline-block;
 }
 
-.header .header-bottom .nav-list li a {
+.header .header-bottom .nav-list li a,
+.header .header-bottom .nav-list li button {
     display: inline-block;
     padding: 15px;
     margin-right: 10px;
     text-decoration: none;
     color: #e1e1e1;
     transform: scale(1);
+    background: none;
+    border: none;
     transition: all 0.3s ease-in-out;
 }
 
-.header .header-bottom .nav-list li a:hover {
+.header .header-bottom .nav-list li .dropdown li a {
+    color: #555;
+}
+
+.dropdown-menu {
+    margin-top: 1px;
+}
+
+.header .header-bottom .nav-list li a:hover,
+.header .header-bottom .nav-list li button:hover {
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
+}
+
+
+.header .header-bottom .nav-list li .dropdown li a:hover {
+    color: #555;
+    background: none;
+    transform: scale(1);
+    text-decoration: underline;
 }
 
 .header .logo-container-2 {
@@ -234,6 +254,10 @@ body * {
     width: 100%;
 }
 
+.company .mobile-arrow {
+    display: none;
+}
+
 .company button {
     color: #fafafa;
     background: none;
@@ -242,7 +266,6 @@ body * {
     height: 250px;
     width: 70px;
 }
-
 
 .company button.btn1 {
     left: -58px;
@@ -564,6 +587,10 @@ footer .footer-icon {
         width: auto;
     }
 
+    .company .desktop-arrow {
+        display: none;
+    }
+
     .company .mobile-arrow {
         display: block;
         text-align: center;
@@ -578,10 +605,6 @@ footer .footer-icon {
 
     .company .mobile-arrow button.btn1{
         left: 0;
-    }
-
-    .company .desktop-arrow {
-        display: none;
     }
 
     .gallery {
