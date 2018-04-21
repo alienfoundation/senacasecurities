@@ -130,10 +130,16 @@ body * {
     transform: scale(1.1);
 }
 
+.header .logo-container-2 {
+    text-align: left;
+    margin-left: -6%;
+}
+
 .slider-wrapper {
     height: 550px;
     overflow: hidden;
 }
+
 
 .slider-img {
     position: relative;
@@ -482,9 +488,120 @@ footer .footer-logo img {
     width: 400px;
     position: relative;
     left: -50px;
-    top: 30px;
+    top: 5px;
 }
 
 footer .footer-icon {
     margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .header .logo-container {
+        text-align: center;
+    }
+    
+    .header .logo-container img {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100px;
+    }
+
+    .header .logo-container-2 {
+        text-align: center;
+        margin-left: 0;
+        margin-top: -4px;
+    }
+
+    .header .logo-container-2 img {
+        height: 85px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .slider-text {
+        left: 0;
+    }
+
+    footer .footer-logo {
+        text-align: center;
+    }
+
+    footer .footer-logo img {
+        width: 200px;
+        left: 0;
+        top: 0;
+    }
+
+    .company .top-bar {
+        height: 50px;
+    }
+
+    .company .company-text {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 5px 0px 0px;
+    }
+
+    .left-right-swipe {
+        padding: 15px;
+        padding-top: 0;
+        line-height: 22px;
+    }
+
+    .company .company-heading {
+        margin-bottom: 20px;
+    }
+
+    .left-right-swipe #wwd-head {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .company button {
+        height: auto;
+        width: auto;
+    }
+
+    .company .mobile-arrow {
+        display: block;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .company .mobile-arrow .left-arrow,
+    .company .mobile-arrow .right-arrow {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .company .mobile-arrow button.btn1{
+        left: 0;
+    }
+
+    .company .desktop-arrow {
+        display: none;
+    }
+
+    .gallery .gallery-card {
+        width: 250px;
+    }
+
+    .gallery .gallery-card .img-container {
+        height: 125px;
+    }
+
+    .grow span {
+        top: -150px;
+    }
+
+    .grow .reach-us {
+        margin-top: 40px;
+    }
+
+    .grow a:hover span.reach-us-span {
+        top: 34px;
+    }
+
 }
